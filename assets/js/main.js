@@ -13,8 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         subject: document.querySelector("#subject").value,
         message: document.querySelector("#message").value,
       };
-
       const response = await axios.post("http://localhost:3000/form", data);
-      console.log(response);
+      console.log(response.data);
     });
 });
